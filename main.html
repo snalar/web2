@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мартынов Руслан</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/436c94be-7a08-46a7-bcc1-36ff7b622f80/dc9ew0w-9f432c64-9188-45a9-a205-fbc5e86e0775.png/v1/fill/w_1024,h_576,q_80,strp/python1920x1080_by_basith374_dc9ew0w-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvNDM2Yzk0YmUtN2EwOC00NmE3LWJjYzEtMzZmZjdiNjIyZjgwXC9kYzlldzB3LTlmNDMyYzY0LTkxODgtNDVhOS1hMjA1LWZiYzVlODZlMDc3NS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.kcc-EnDj-hbKS3N1oBUaKbvS_mwsQtCmkzO8Hmmi9qk');
+            background-size: cover;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ff0000;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 50px auto;
+            gap: 20px;
+        }
+        .top-blocks {
+            display: flex;
+            gap: 20px;
+            flex-basis: 100%;
+        }
+        .block {
+            flex: 1;
+            padding: 20px;
+            background-color: rgba(20, 20, 20, 0.85);
+            border-radius: 5px;
+        }
+        .bottom-block {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(20, 20, 20, 0.85);
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        h1, h2 {
+            color: #ff0000;
+            text-transform: uppercase;
+        }
+        p {
+            line-height: 1.8;
+            color: #e0e0e0;
+        }
+        .highlight {
+            color: #00c3ff;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ff0000;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 0.8em;
+        }
+        .profile-pic {
+            float: right;
+            margin-left: 20px;
+            border-radius: 50%;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .social-links div {
+            text-align: center;
+        }
+        .social-links img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        /* Кнопка отчета */
+        .report-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 30px;
+            text-align: center;
+            background-color: #000000;
+            color: #ff0000;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .report-button:hover {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Портфолио
+</header>
+
+<div class="main-container">
+    <!-- Верхние блоки -->
+    <div class="top-blocks">
+        <div class="block">
+            <h1>Обо мне</h1>
+            <img class="profile-pic" src="./photo.jpg" alt="Моя фотография" width="100" height="100"/>
+            <p>Меня зовут <span class="highlight">Мартынов Руслан</span>. Живу в <span class="highlight">Новосибирске</span></p>
+            <p>Обожаю python и лучше языка ещё не придумали, поэтому программирую только на нём.</p>
+        </div>
+        <div class="block">
+            <h2>Образование</h2>
+            <p>Учусь в <span class="highlight">НГТУ</span> на факультете <span class="highlight">прикладной математики и информатики</span>. На направлении <span class="highlight">математическое обеспечение и администрирование информационных систем</span>. Профиль <span class="highlight">системы искусственного интеллекта</span>.</p>
+        </div>
+    </div>
+
+    <!-- Нижний блок -->
+    <div class="bottom-block">
+        <h2>Интересы</h2>
+        <p>Программирую на python, изучаю искуственный ителект, компьютерное зрение.</p>
+        <p>Работаю репититором ЕГЭ по информатике.</p>
+        <div class="social-links">
+            <div>
+                <a href="https://github.com/snalar" target="_blank">
+                    <img src="https://repository-images.githubusercontent.com/761364644/72b252be-8654-48ad-a73e-5c75283aec6c" alt="GitHub">
+                </a>
+            </div>
+            <div>
+                <a href="https://t.me/f4nt1k104" target="_blank">
+                    <img src="https://a.d-cd.net/6e01e75s-1920.jpg" alt="Telegram">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Кнопка "ОТЧЁТ" -->
+        <a href="otchet.html" class="report-button">Отчёт</a>
+    </div>
+</div>
+
+<footer>
+    © 2024 Мартынов Руслан. ПМИ-22. НГТУ ФПМИ.
+</footer>
+
+</body>
+</html>

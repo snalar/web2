@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap; /* Позволяет переносить строки */
+        }
+        .main-info {
+            margin-top: 100px;
+            line-height: 1.8;
+            text-align: center;
+        }
+        .main-info p {
+            font-family: "Times New Roman", serif;
+        }
+        .footer {
+            margin-top: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Титульный лист -->
+<div class="main-info">
+    <p>Лабораторная работа №2<br>
+    по Основы web-программирования<br>
+    Практическое задание: верстка </p>
+
+    <p style="text-align: left; margin-left: 200px; margin-top: 200px;">
+        Факультет: ФПМИ<br>
+        Группа: ПМИ-22<br>
+        Студент: Мартынов Р.Д.<br>
+        Преподаватель: Цыгулин А.А.<br>
+    </p>
+</div>
+
+<div class="footer">
+    <p>Новосибирск 2024</p>
+</div>
+
+<!-- Основная часть документа -->
+<div class="container">
+
+    <h2>1) Цель</h2>
+    <p>Познакомиться со структурой HTML-документа, создать страничку со своей презентацией, проявить творческий подход.</p>
+
+    <h2>2) Ход работы</h2>
+    <p>Код работы:</p>
+    <pre>
+        <code>
+            <!DOCTYPE html>
+            <html lang="ru">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Отображение HTML-кода</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f4f4f9;
+                        color: #333;
+                        padding: 20px;
+                    }
+                    pre {
+                        background-color: #222;
+                        color: #f4f4f4;
+                        padding: 15px;
+                        border-radius: 8px;
+                        overflow-x: auto;
+                        font-family: 'Courier New', monospace;
+                        white-space: pre-wrap; /* сохраняет переносы строк */
+                    }
+                </style>
+            </head>
+            <body>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="ru"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Мартынов Руслан&lt;/title&gt;
+                &lt;style&gt;
+                    body {
+                        font-family: 'Courier New', Courier, monospace;
+                        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/436c94be-7a08-46a7-bcc1-36ff7b622f80/dc9ew0w-9f432c64-9188-45a9-a205-fbc5e86e0775.png/v1/fill/w_1024,h_576,q_80,strp/python1920x1080_by_basith374_dc9ew0w-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvNDM2Yzk0YmUtN2EwOC00NmE3LWJjYzEtMzZmZjdiNjIyZjgwXC9kYzlldzB3LTlmNDMyYzY0LTkxODgtNDVhOS1hMjA1LWZiYzVlODZlMDc3NS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.kcc-EnDj-hbKS3N1oBUaKbvS_mwsQtCmkzO8Hmmi9qk');
+                        background-size: cover;
+                        color: #e0e0e0;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    header {
+                        background-color: rgba(0, 0, 0, 0.8);
+                        color: #ff0000;
+                        padding: 20px;
+                        text-align: center;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                    }
+                    .main-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        max-width: 1200px;
+                        margin: 50px auto;
+                        gap: 20px;
+                    }
+                    .top-blocks {
+                        display: flex;
+                        gap: 20px;
+                        flex-basis: 100%;
+                    }
+                    .block {
+                        flex: 1;
+                        padding: 20px;
+                        background-color: rgba(20, 20, 20, 0.85);
+                        border-radius: 5px;
+                    }
+                    .bottom-block {
+                        width: 100%;
+                        padding: 20px;
+                        background-color: rgba(20, 20, 20, 0.85);
+                        border-radius: 5px;
+                        margin-top: 20px;
+                    }
+                    h1, h2 {
+                        color: #ff0000;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        line-height: 1.8;
+                        color: #e0e0e0;
+                    }
+                    .highlight {
+                        color: #00c3ff;
+                        font-style: italic;
+                    }
+                    footer {
+                        text-align: center;
+                        padding: 10px;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        color: #ff0000;
+                        position: fixed;
+                        width: 100%;
+                        bottom: 0;
+                        font-size: 0.8em;
+                    }
+                    .profile-pic {
+                        float: right;
+                        margin-left: 20px;
+                        border-radius: 50%;
+                    }
+                    .social-links {
+                        display: flex;
+                        justify-content: center;
+                        gap: 20px;
+                        align-items: center;
+                        margin-top: 20px;
+                    }
+                    .social-links div {
+                        text-align: center;
+                    }
+                    .social-links img {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                    }
+                    .report-button {
+                        display: block;
+                        width: 100%;
+                        padding: 15px;
+                        margin-top: 30px;
+                        text-align: center;
+                        background-color: #000000;
+                        color: #ff0000;
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                    .report-button:hover {
+                        background-color: #ffffff;
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            
+            &lt;header&gt;
+                Портфолио
+            &lt;/header&gt;
+            
+            &lt;div class="main-container"&gt;
+                &lt;div class="top-blocks"&gt;
+                    &lt;div class="block"&gt;
+                        &lt;h1&gt;Обо мне&lt;/h1&gt;
+                        &lt;img class="profile-pic" src="./photo.jpg" alt="Моя фотография" width="100" height="100"/&gt;
+                        &lt;p&gt;Меня зовут &lt;span class="highlight"&gt;Мартынов Руслан&lt;/span&gt;. Живу в &lt;span class="highlight"&gt;Новосибирске&lt;/span&gt;&lt;/p&gt;
+                        &lt;p&gt;Обожаю python и лучше языка ещё не придумали, поэтому программирую только на нём.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="block"&gt;
+                        &lt;h2&gt;Образование&lt;/h2&gt;
+                        &lt;p&gt;Учусь в &lt;span class="highlight"&gt;НГТУ&lt;/span&gt; на факультете &lt;span class="highlight"&gt;прикладной математики и информатики&lt;/span&gt;. На направлении &lt;span class="highlight"&gt;математическое обеспечение и администрирование информационных систем&lt;/span&gt;. Профиль &lt;span class="highlight"&gt;системы искусственного интеллекта&lt;/span&gt;.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            
+                &lt;div class="bottom-block"&gt;
+                    &lt;h2&gt;Интересы&lt;/h2&gt;
+                    &lt;p&gt;Программирую на python, изучаю искуственный ителект, компьютерное зрение.&lt;/p&gt;
+                    &lt;p&gt;Работаю репититором ЕГЭ по информатике.&lt;/p&gt;
+                    &lt;div class="social-links"&gt;
+                        &lt;div&gt;
+                            &lt;a href="https://github.com/snalar" target="_blank"&gt;
+                                &lt;img src="https://repository-images.githubusercontent.com/761364644/72b252be-8654-48ad-a73e-5c75283aec6c" alt="GitHub"&gt;
+                            &lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;a href="https://t.me/f4nt1k104" target="_blank"&gt;
+                                &lt;img src="https://a.d-cd.net/6e01e75s-1920.jpg" alt="Telegram"&gt;
+                            &lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;a href="otchet.html" class="report-button"&gt;Отчёт&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;footer&gt;
+                © 2024 Мартынов Руслан. ПМИ-22. НГТУ ФПМИ.
+            &lt;/footer&gt;
+            
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </pre>
+            
+            </body>
+            </html>
+            
+        </code>
+    </pre>
+    <h2>3) Вид Страницы</h2>
+    <img src="./image.jpg">
+    <h2>4) Вывод</h2>
+    <p>В ходе данной работы было изучена верстка со структурой HTML-документа, создана страничка со своей презентацией.</p>
+</div>
+
+</body>
+</html>
